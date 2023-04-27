@@ -19,7 +19,6 @@
 #include "./I2C_BH1750/i2cH_bh1750H_gpio.h"
 #include "./I2C_BH1750/i2cH_bh1750H.h"
 #include "./OLED/OLED.h"
-#include "./Encoder/Encoder.h"
 #include "./step/step.h"
 #include "./jdq/jdq.h"
 #include <cmath>
@@ -196,6 +195,15 @@ void printf_T(void)
 void printf_OD(void)
 {
 	for(u8 i=1 ; i<13 ; i++ ){
+		TA[i]=100*dataA2[i]/dataA[i];
+		TB[i]=100*dataB2[i]/dataB[i];
+		TC[i]=100*dataC2[i]/dataC[i];
+		TD[i]=100*dataD2[i]/dataD[i];
+		TE[i]=100*dataE2[i]/dataE[i];
+		TF[i]=100*dataF2[i]/dataF[i];
+		TG[i]=100*dataG2[i]/dataG[i];
+		TH[i]=100*dataH2[i]/dataH[i];
+		
 		ODA[i]=-log10(TA[i]/100);
 		ODB[i]=-log10(TB[i]/100);
 		ODC[i]=-log10(TC[i]/100);

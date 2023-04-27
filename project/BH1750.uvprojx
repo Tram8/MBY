@@ -561,11 +561,6 @@
               <FilePath>..\User\OLED\OLED_Font.h</FilePath>
             </File>
             <File>
-              <FileName>Encoder.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\Encoder\Encoder.c</FilePath>
-            </File>
-            <File>
               <FileName>step.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\step\step.c</FilePath>
